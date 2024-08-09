@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinton Cario</title>
     <style>
-        /* Page layout & sections */ 
+        /* Page layout & sections */
         body, html {
             margin: 0;
             padding: 0;
@@ -16,33 +16,35 @@
             background-size: cover;
         }
 
+        /* Responsive adjustments */
         .banner {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 75vh;
+            height: auto;
+            min-height: 75vh;
             background: rgba(255, 255, 255, 0.8);
             color: #332e2e;
             text-align: center;
             padding: 20px;
             border-radius: 10px;
-            margin: 10vh;
+            margin: 10vh 5vw;
         }
 
         .banner h1 {
-            font-size: 4em;
+            font-size: 2.5em;
             margin: 0;
         }
 
         .banner p {
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin: 0;
         }
 
         .circle {
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             margin-top: 20px;
             display: flex;
@@ -54,8 +56,9 @@
         .links a {
             color: #332e2e;
             text-decoration: none;
-            margin: 0 10px;
-            font-size: 1.2em;
+            margin: 5px;
+            font-size: 1em;
+            display: inline-block;
         }
 
         .links a:hover {
@@ -85,14 +88,14 @@
             justify-content: center;
         }
 
-        /* For the microbe */ 
+        /* For the microbe */
         .microbe {
-            height: 100px;
+            height: 80px;
             background-color: transparent;
             position: absolute;
         }
 
-        /* For skill bars */ 
+        /* For skill bars */
         .skill-bar {
             display: flex;
             align-items: center;
@@ -119,11 +122,11 @@
 
         /* Footer link styling */
         .footer {
-            position: absolute;
+            position: relative;
             bottom: 10px;
             width: 100%;
             text-align: center;
-            font-size: 0.9em;
+            font-size: 0.8em;
         }
 
         .footer a {
@@ -133,6 +136,65 @@
 
         .footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media only screen and (max-width: 768px) {
+            .banner {
+                margin: 5vh 5vw;
+                padding: 10px;
+            }
+
+            .banner h1 {
+                font-size: 2em;
+            }
+
+            .banner p {
+                font-size: 1em;
+            }
+
+            .circle {
+                width: 80px;
+                height: 80px;
+            }
+
+            .links a {
+                margin: 5px;
+                font-size: 0.9em;
+            }
+
+            .footer {
+                font-size: 0.7em;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .banner {
+                margin: 5vh 2vw;
+                padding: 5px;
+            }
+
+            .banner h1 {
+                font-size: 1.5em;
+            }
+
+            .banner p {
+                font-size: 0.9em;
+            }
+
+            .circle {
+                width: 60px;
+                height: 60px;
+            }
+
+            .links a {
+                margin: 3px;
+                font-size: 0.8em;
+            }
+
+            .footer {
+                font-size: 0.6em;
+            }
         }
 
         /* Fonts */
