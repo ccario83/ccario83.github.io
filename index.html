@@ -16,7 +16,6 @@
             background-size: cover;
         }
 
-        /* Responsive adjustments */
         .banner {
             display: flex;
             flex-direction: column;
@@ -27,7 +26,7 @@
             background: rgba(255, 255, 255, 0.8);
             color: #332e2e;
             text-align: center;
-            padding: 20px;
+            padding: 2hw;
             border-radius: 10px;
             margin: 10vh 5vw;
         }
@@ -37,7 +36,7 @@
             margin: 0;
         }
 
-        .banner p {
+        .banner h2 {
             font-size: 1.2em;
             margin: 0;
         }
@@ -88,6 +87,24 @@
             justify-content: center;
         }
 
+
+        /* Language icons */
+        .language-icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            white-space: wrap;
+        }
+
+        .language-icons .icon {
+            flex: 1 1 auto;
+            font-size: 24px;
+            margin-right: 10px;
+            transition: font-size 0.3s ease;
+        }
+
+
         /* For the microbe */
         .microbe {
             height: 80px;
@@ -95,30 +112,6 @@
             position: absolute;
         }
 
-        /* For skill bars */
-        .skill-bar {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .skill-bar span {
-            flex: 1;
-        }
-
-        .bar {
-            flex: 3;
-            height: 20px;
-            background: rgba(239, 251, 229, 0.8);
-            border-radius: 10px;
-            overflow: hidden;
-            margin-left: 10px;
-        }
-
-        .bar div {
-            height: 100%;
-            background-color: #332e2e;
-        }
 
         /* Footer link styling */
         .footer {
@@ -138,6 +131,7 @@
             text-decoration: underline;
         }
 
+
         /* Media Queries for Responsive Design */
         @media only screen and (max-width: 768px) {
             .banner {
@@ -149,7 +143,7 @@
                 font-size: 2em;
             }
 
-            .banner p {
+            .banner h2 {
                 font-size: 1em;
             }
 
@@ -178,7 +172,7 @@
                 font-size: 1.5em;
             }
 
-            .banner p {
+            .banner h2 {
                 font-size: 0.9em;
             }
 
@@ -228,20 +222,19 @@
         </div>
 
         <hr/>
-        <h3> Languages </h3>
-        <div class="links">
-            <a href="https://github.com/Wittelab/orchid"><span class="nerd-font icon"></span></a> <!-- Python -->
-            <a href="https://github.com/ccario83/workflows"><span class="nerd-font icon"></span></a> <!-- Nextflow -->
-            <a href="https://rlang.r-lib.org/"><span class="nerd-font icon"></span></a> <!-- R -->
-            <a href="https://www.gnu.org/software/bash/"><span class="nerd-font icon"></span></a> <!-- Bash -->
-            <a href="https://github.com/ccario83/juliaNN"><span class="nerd-font icon"></span></a> <!-- Julia -->
-            <a href="https://github.com/Wittelab/samasy"><span class="nerd-font icon"></span></a> <!-- Ruby -->
-            <a href="https://github.com/ccario83/vpconv"><span class="nerd-font icon"></span></a> <!-- C++ -->
-            <a href="https://github.com/ccario83/lsr"><span class="nerd-font icon">󰥛</span></a> <!-- Matlab -->
-            <a href="https://github.com/ccario83/mad"><span class="nerd-font icon"></span></a> <!-- Perl -->
-            <a href="https://github.com/ccario83/mouse-genetic-server"><span class="nerd-font icon"></span></a> <!-- ROR -->
-            <a href="https://github.com/ccario83/samasy"><span class="nerd-font icon"></span></a> <!-- HTML/CSS/JS -->
-
+        <h3> Language Experience </h3>
+        <div class="links language-icons">
+            <span class="nerd-font icon"><a href="https://github.com/Wittelab/orchid"></a></span>               <!-- Python -->
+            <span class="nerd-font icon"><a href="https://github.com/ccario83/workflows"></a></span>            <!-- Nextflow -->
+            <span class="nerd-font icon"><a href="https://rlang.r-lib.org/"></a></span>                         <!-- R -->
+            <span class="nerd-font icon"><a href="https://www.gnu.org/software/bash/"></a></span>               <!-- Bash -->
+            <span class="nerd-font icon"><a href="https://github.com/ccario83/juliaNN"></a></span>              <!-- Julia -->
+            <span class="nerd-font icon"><a href="https://github.com/Wittelab/samasy"></a></span>               <!-- Ruby -->
+            <span class="nerd-font icon"><a href="https://github.com/ccario83/vpconv"></a></span>               <!-- C++ -->
+            <span class="nerd-font icon"><a href="https://github.com/ccario83/lsr">󰥛</a></span>                  <!-- Matlab -->
+            <span class="nerd-font icon"><a href="https://github.com/ccario83/mad"></a></span>                  <!-- Perl -->
+            <span class="nerd-font icon"><a href="https://github.com/ccario83/mouse-genetic-server"></a></span> <!-- ROR -->
+            <span class="nerd-font icon"><a href="https://github.com/ccario83/samasy"></a></span>               <!-- HTML/CSS/JS -->
         </div>
     </div>
 
