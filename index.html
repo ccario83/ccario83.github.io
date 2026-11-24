@@ -105,6 +105,66 @@
         }
 
 
+        /* Project cards */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto 10px;
+            text-align: left;
+        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            padding: 14px 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        }
+        .project-card h4 {
+            margin: 0 0 6px;
+            font-size: 1.05em;
+        }
+        .project-card p {
+            margin: 4px 0;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        .project-card a {
+            color: #332e2e;
+            text-decoration: none;
+        }
+        .project-card a:hover {
+            color: #22d3ee;
+            transition: color 0.3s ease;
+        }
+        .project-card .tags {
+            font-size: 0.8em;
+            opacity: 0.75;
+        }
+        .project-card .card-links {
+            font-size: 0.85em;
+        }
+        .project-card .card-links a {
+            text-decoration: underline;
+        }
+        .card-icon {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+        .also {
+            font-size: 0.85em;
+            opacity: 0.8;
+        }
+        .also .nerd-font {
+            font-size: 18px;
+            margin: 0 4px;
+        }
         /* For the microbe */
         .microbe {
             height: 80px;
@@ -222,20 +282,34 @@
         </div>
 
         <hr/>
-        <h3> Language Experience </h3>
-        <div class="links language-icons">
-            <span class="nerd-font icon"><a href="https://github.com/Wittelab/orchid"></a></span>               <!-- Python -->
-            <span class="nerd-font icon"><a href="https://github.com/ccario83/workflows"></a></span>            <!-- Nextflow -->
-            <span class="nerd-font icon"><a href="https://rlang.r-lib.org/"></a></span>                         <!-- R -->
-            <span class="nerd-font icon"><a href="https://www.gnu.org/software/bash/"></a></span>               <!-- Bash -->
-            <span class="nerd-font icon"><a href="https://github.com/ccario83/juliaNN"></a></span>              <!-- Julia -->
-            <span class="nerd-font icon"><a href="https://github.com/Wittelab/samasy"></a></span>               <!-- Ruby -->
-            <span class="nerd-font icon"></span>               <!-- C++ -->
-            <span class="nerd-font icon"><a href="https://github.com/ccario83/lsr">󰥛</a></span>                  <!-- Matlab -->
-            <span class="nerd-font icon"><a href="https://github.com/ccario83/mad"></a></span>                  <!-- Perl -->
-            <span class="nerd-font icon"><a href="https://github.com/ccario83/mouse-genetic-server"></a></span> <!-- ROR -->
-            <span class="nerd-font icon"><a href="https://github.com/ccario83/samasy"></a></span>               <!-- HTML/CSS/JS -->
+        <h3> Selected Projects </h3>
+        <div class="projects">
+            <div class="project-card">
+                <h4><span class="nerd-font card-icon"></span><a href="https://github.com/Wittelab/orchid">Orchid</a></h4>
+                <p>Machine learning on tumor mutations: annotate millions of variants, then classify cancers or trace cell-free DNA back to its tissue of origin.</p>
+                <p class="tags">Python · ML · Docker</p>
+                <p class="card-links"><a href="https://github.com/Wittelab/orchid">Code</a> · <a href="https://doi.org/10.1093/bioinformatics/btx709">Bioinformatics, 2018</a></p>
+            </div>
+            <div class="project-card">
+                <h4><span class="nerd-font card-icon"></span><a href="https://github.com/ccario83/workflows">cfDNA pipelines</a></h4>
+                <p>The Nextflow pipelines behind my PhD, taking cell-free DNA sequencing from raw reads to tumor variant calls.</p>
+                <p class="tags">Nextflow · NGS · HPC</p>
+                <p class="card-links"><a href="https://github.com/ccario83/workflows">Code</a></p>
+            </div>
+            <div class="project-card">
+                <h4><span class="nerd-font card-icon"></span><a href="https://github.com/Wittelab/samasy">Samasy</a></h4>
+                <p>A web app that tracks samples in 96-well plates and writes the transfer maps for liquid-handling robots, so nothing lands in the wrong well.</p>
+                <p class="tags">Ruby · Lab automation · Docker</p>
+                <p class="card-links"><a href="https://github.com/Wittelab/samasy">Code</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/30477330/">BioTechniques, 2018</a></p>
+            </div>
+            <div class="project-card">
+                <h4><span class="nerd-font card-icon">󰥛</span><a href="https://github.com/ccario83/lsr">LSRtrack + LSRanalyze</a></h4>
+                <p>Tracks zebrafish larvae in 96-well plates and turns every wiggle into motor-function data.</p>
+                <p class="tags">MATLAB · Image analysis</p>
+                <p class="card-links"><a href="https://github.com/ccario83/lsr">Code</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4169233/">Nature Protocols, 2014</a></p>
+            </div>
         </div>
+        <p class="also">Also fluent in <span class="nerd-font" title="R"></span> <span class="nerd-font" title="Bash"></span> <span class="nerd-font" title="Julia"></span> <span class="nerd-font" title="Perl"></span> <span class="nerd-font" title="C++"></span> <span class="nerd-font" title="HTML/CSS/JS"></span></p>
     </div>
 
     <div class="footer">
